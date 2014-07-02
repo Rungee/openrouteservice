@@ -71,7 +71,7 @@ var lang_de = {
 		'moveUpWaypoint':  'Wegpunkt nach Oben verschieben',
 		'moveDownWaypoint':  'Wegpunkt nach Unten verschieben',
 		'removeWaypoint':  'Wegpunkt entfernen',
-		'useAsWaypoint' :  'als Wegpunkt &uuml;bernehmen',
+		'useAsWaypoint' : 'als Wegpunkt %FCbernehmen',
 		
 	//Route Preferences
 		'Shortest':  'K&uuml;rzester Weg',
