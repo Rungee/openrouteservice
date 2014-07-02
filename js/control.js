@@ -475,9 +475,15 @@ var Controller = ( function(w) {'use strict';
 					var listOfPoints = searchAddress.parseResultsToPoints(results);
 
 					ui.searchAddressChangeToSearchingState(false);
-
-					var listOfFeatures = map.addSearchAddressResultMarkers(listOfPoints);
-					ui.updateSearchAddressResultList(results, listOfFeatures, map.SEARCH);
+					
+					if (listOfPoints.length != 0) {
+						var listOfFeatures = map.addSearchAddressResultMarkers(listOfPoints);
+						ui.updateSearchAddressResultList(results, listOfFeatures, map.SEARCH);
+					}
+					else {
+						$('#checkboxWarn').text(preferences.translate('noRouteFound'));
+						ui.showSearchAddressError();
+					}
 				}
 			}
 		}
