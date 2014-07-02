@@ -35,23 +35,26 @@ namespaces.schemata = {
  * if you want to become an active ORS code contributor please contact us: openrouteserviceATgeog.uni-heidelberg.de 
  */
 namespaces.services = {
-	geocoding : '', //for address search requests
-	routing : '', //for routing requests
-	directory : '', //for POI search requests
-	analyse : '',
-	wps : '' //for calculation of polygon around route for POI search
-	//profile: '' 			//for height profile of route
+	geocoding : 'http://openls.geog.uni-heidelberg.de/testing2011/geocode', //for address search requests
+	routing : 'http://openls.geog.uni-heidelberg.de/testing2011/route', //for routing requests
+	directory : 'http://openls.geog.uni-heidelberg.de/testing2011/directory', //for POI search requests
+	analyse : 'http://openls.geog.uni-heidelberg.de/osm/eu/analyse',
+	wps : 'http://wasserkuppe.geog.uni-heidelberg.de:8080/deegree3wps/services' //for calculation of polygon around route for POI search
+	//profile: 'http://watzmann.geog.uni-heidelberg.de:8080/deegree/all' 			//for height profile of route
 };
 
 /**
  * map layers used on the openlayers map
  */
 //url to ORS-WMS map layer
-namespaces.layerWms = '';
+namespaces.layerWms = 'http://129.206.228.72/cached/osm?';
+
 //url to Open Map Surfer layer
-namespaces.layerMapSurfer = '';
+namespaces.layerMapSurfer = 'http://129.206.74.245:8001/tms_r.ashx?x=${x}&y=${y}&z=${z}';
+
 //url to hillshade overlay
-namespaces.layerHs = '';
+namespaces.layerHs = 'http://129.206.228.72/cached/hillshade?';
+
 //urls to TMC overlay
-namespaces.overlayTmc = '';
-namespaces.overlayTmcLines = '';
+namespaces.overlayTmc = 'http://koenigstuhl.geog.uni-heidelberg.de/tmc/wms';
+namespaces.overlayTmcLines = 'http://openls.geog.uni-heidelberg.de/geoserver/wms';
