@@ -22,7 +22,7 @@ var lang_de = {
 	//Routing
 		'planRoute':  'Route planen',
 		'calculatingRoute':  'Route wird berechnet...',
-		'noRouteAvailable' :  'Leider konnte keine Route zwischen den gew&auml;hlten Punkten berechnet werden. Bitte w&auml;hlen Sie Ihre Punkte in der N&auml;he eines Weges.',
+		'noRouteAvailable' : 'Leider konnte keine Route zwischen den gew%E4hlten Punkten f%FCr das Routenprofil Auto - k%FCrzester Weg berechnet werden. %28nicht f%FCr das gew%E4hle Verkehrsmittel zug%E4nglich%29',
 		'routeFromTo' :  'Route nach ',
 		'resetRoute' :  'Gesamte Route l&ouml;schen ',
 		'TotalTime':  'Gesamte Reisezeit',
