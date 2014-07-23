@@ -74,8 +74,14 @@ var Controller = ( function(w) {'use strict';
 
 					ui.searchWaypointChangeToSearchingState(false, wpIndex);
 
-					var listOfFeatures = map.addSearchAddressResultMarkers(listOfPoints, wpIndex);
-					ui.updateSearchWaypointResultList(results, listOfFeatures, map.SEARCH, wpIndex);
+					if (listOfPoints.length != 0) {
+						var listOfFeatures = map.addSearchAddressResultMarkers(listOfPoints, wpIndex);
+						ui.updateSearchWaypointResultList(results, listOfFeatures, map.SEARCH, wpIndex);
+					}
+					else {
+						$('#AddressNotFoundRoutingError').text(preferences.translate('noRouteFound'));
+						ui.showAddressNotFoundRoutingError();
+					}
 				}
 			}
 		}
@@ -481,8 +487,8 @@ var Controller = ( function(w) {'use strict';
 						ui.updateSearchAddressResultList(results, listOfFeatures, map.SEARCH);
 					}
 					else {
-						$('#checkboxWarn').text(preferences.translate('noRouteFound'));
-						ui.showSearchAddressError();
+						$('#CanNotFindAddressError').text(preferences.translate('CanNotFindAddress'));
+						ui.showCanNotFindAddressError();
 					}
 				}
 			}
