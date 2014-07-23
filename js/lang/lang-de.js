@@ -23,6 +23,7 @@ var lang_de = {
 		'planRoute':  'Route planen',
 		'calculatingRoute':  'Route wird berechnet...',
 		'noRouteAvailable' : 'Leider konnte keine Route zwischen den gew%E4hlten Punkten f%FCr das Routenprofil Auto - k%FCrzester Weg berechnet werden. %28nicht f%FCr das gew%E4hle Verkehrsmittel zug%E4nglich%29',
+		'AddressNotFoundRouting' : 'Der von Ihnen eingegebene Ort konnte leider nicht gefunden werden.',
 		'routeFromTo' :  'Route nach ',
 		'resetRoute' :  'Gesamte Route l&ouml;schen ',
 		'TotalTime':  'Gesamte Reisezeit',
@@ -46,6 +47,7 @@ var lang_de = {
 		'selectResult':  'W&auml;hlen Sie ein Suchergebnis aus:',
 		'searchAgain':  'erneut Suchen',
 		'searchError' : 'W&auml;hrend der Suche ist leider ein Fehler aufgetreten!',
+		'CanNotFindAddress' : 'Der von Ihnen eingegebene Ort konnte leider nicht gefunden werden.',
 	
 	//Address search
 		'searchForPoints':  'Nach Adresse suchen',
