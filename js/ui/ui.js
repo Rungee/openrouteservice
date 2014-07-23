@@ -1053,6 +1053,14 @@ var Ui = ( function(w) {'use strict';
 			errorContainer.html(preferences.translate("searchError"));
 			errorContainer.show();
 		}
+		/**
+		 * views an error message when typed in address is not known
+		 */
+		function showCanNotFindAddressError() {
+			var errorContainer = $('#CanNotFindAddressError');
+			errorContainer.html(preferences.translate("CanNotFindAddress"));
+			errorContainer.show();
+		}
 
 		/**
 		 * triggers moving and zooming the map so that all address search results become visible on the screen
@@ -1651,6 +1659,14 @@ var Ui = ( function(w) {'use strict';
 		function showRoutingError() {
 			var el = $('#routeError');
 			el.html(preferences.translate('noRouteAvailable'));
+			el.show();
+		}
+		/**
+		 * displays an error message (in the routing menu) if the Adress is not found 
+		 */
+		function showAddressNotFoundRoutingError() {
+			var el = $('#AddressNotFoundRoutingError');
+			el.html(preferences.translate('AddressNotFoundRouting'));
 			el.show();
 		}
 
@@ -2280,6 +2296,8 @@ var Ui = ( function(w) {'use strict';
 		Ui.prototype.searchAddressChangeToSearchingState = searchAddressChangeToSearchingState;
 		Ui.prototype.updateSearchAddressResultList = updateSearchAddressResultList;
 		Ui.prototype.showSearchAddressError = showSearchAddressError;
+		Ui.prototype.showCanNotFindAddressError = showCanNotFindAddressError;
+		Ui.prototype.showAddressNotFoundRoutingError = showAddressNotFoundRoutingError;
 
 		Ui.prototype.showCurrentLocation = showCurrentLocation;
 		Ui.prototype.showGeolocationSearching = showGeolocationSearching;
