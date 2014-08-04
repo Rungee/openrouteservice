@@ -73,7 +73,7 @@ var Controller = ( function(w) {'use strict';
 					var listOfPoints = waypoint.parseResultsToPoints(results, wpIndex);
 
 					ui.searchWaypointChangeToSearchingState(false, wpIndex);
-
+					
 					if (listOfPoints.length != 0) {
 						var listOfFeatures = map.addSearchAddressResultMarkers(listOfPoints, wpIndex);
 						ui.updateSearchWaypointResultList(results, listOfFeatures, map.SEARCH, wpIndex);
@@ -481,7 +481,7 @@ var Controller = ( function(w) {'use strict';
 					var listOfPoints = searchAddress.parseResultsToPoints(results);
 
 					ui.searchAddressChangeToSearchingState(false);
-					
+
 					if (listOfPoints.length != 0) {
 						var listOfFeatures = map.addSearchAddressResultMarkers(listOfPoints);
 						ui.updateSearchAddressResultList(results, listOfFeatures, map.SEARCH);
@@ -727,7 +727,7 @@ var Controller = ( function(w) {'use strict';
 				var avoidTollway = prefs[1][1];
 				var avoidAreas = map.getAvoidAreas();
 
-				route.calculate(routePoints, routeCalculationSuccess, routeCalculationError, preferences.routingLanguage, routePref, avoidHighway, avoidTollway, avoidAreas);
+				route.calculate(routePoints, routeCalculationSuccess, routeCalculationError, noCarRouteCalculationError, preferences.routingLanguage, routePref, avoidHighway, avoidTollway, avoidAreas);
 				//try to read a variable that is set after the service response was received. If this variable is not set after a while -> timeout.
 				clearTimeout(timerRoute);
 				timerRoute = setTimeout(function() {
@@ -785,7 +785,7 @@ var Controller = ( function(w) {'use strict';
 
 					map.zoomToRoute();
 				} else {
-					routeCalculationError();
+					noCarRouteCalculationError();
 				}
 			}
 		}
@@ -796,6 +796,17 @@ var Controller = ( function(w) {'use strict';
 		function routeCalculationError() {
 			ui.endRouteCalculation();
 			ui.showRoutingError();
+			ui.hideRouteSummary();
+			ui.hideRouteInstructions();
+			map.updateRoute();
+		}
+
+		/**
+		 * shows a route calculation error if Waypoints can not be connected; hides route information
+		 */
+		function noCarRouteCalculationError() {
+			ui.endRouteCalculation();
+			ui.ShowNoCarRouteToConnect();
 			ui.hideRouteSummary();
 			ui.hideRouteInstructions();
 			map.updateRoute();

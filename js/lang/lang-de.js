@@ -22,7 +22,8 @@ var lang_de = {
 	//Routing
 		'planRoute':  'Route planen',
 		'calculatingRoute':  'Route wird berechnet...',
-		'noRouteAvailable' : 'Leider konnte keine Route zwischen den gew%E4hlten Punkten f%FCr das Routenprofil Auto - k%FCrzester Weg berechnet werden. %28nicht f%FCr das gew%E4hle Verkehrsmittel zug%E4nglich%29',
+		'noRouteAvailable' : 'Leider konnte keine Route zwischen den gewählten Punkten berechnet werden. Bitte wählen Sie Ihre Punkte in der Nähe eines Weges.',
+		'noCarRouteToConnect' : 'Leider konnte keine Route zwischen den gew%E4hlten Punkten f%FCr das Routenprofil Auto - k%FCrzester Weg berechnet werden. %28nicht f%FCr das gew%E4hle Verkehrsmittel zug%E4nglich%29',
 		'AddressNotFoundRouting' : 'Der von Ihnen eingegebene Ort konnte leider nicht gefunden werden.',
 		'routeFromTo' :  'Route nach ',
 		'resetRoute' :  'Gesamte Route l&ouml;schen ',
@@ -73,7 +74,7 @@ var lang_de = {
 		'moveUpWaypoint':  'Wegpunkt nach Oben verschieben',
 		'moveDownWaypoint':  'Wegpunkt nach Unten verschieben',
 		'removeWaypoint':  'Wegpunkt entfernen',
-		'useAsWaypoint' : 'als Wegpunkt %FCbernehmen',
+		'useAsWaypoint' :  'als Wegpunkt %FCbernehmen',
 		
 	//Route Preferences
 		'Shortest':  'K&uuml;rzester Weg',

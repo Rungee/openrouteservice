@@ -1654,11 +1654,19 @@ var Ui = ( function(w) {'use strict';
 		}
 
 		/**
-		 * displays an error message when no route between the selected waypoints could be found or another error happened during route calculation
+		 * Error happened during route calculation
 		 */
 		function showRoutingError() {
 			var el = $('#routeError');
 			el.html(preferences.translate('noRouteAvailable'));
+			el.show();
+		}
+		/**
+		 * displays an error message when no route between the selected waypoints could be found.
+		 */
+		function ShowNoCarRouteToConnect() {
+			var el = $('#routeError');
+			el.html(preferences.translate('noCarRouteToConnect'));
 			el.show();
 		}
 		/**
@@ -2318,6 +2326,7 @@ var Ui = ( function(w) {'use strict';
 		Ui.prototype.hideRouteSummary = hideRouteSummary;
 		Ui.prototype.hideRouteInstructions = hideRouteInstructions;
 		Ui.prototype.showRoutingError = showRoutingError;
+		Ui.prototype.ShowNoCarRouteToConnect = ShowNoCarRouteToConnect;
 
 		Ui.prototype.setRouteOption = setRouteOption;
 		Ui.prototype.setAvoidables = setAvoidables;
