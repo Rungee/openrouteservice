@@ -5,7 +5,7 @@ var lang_ru = {
     'half-right': 'правее',
     'straight': 'прямо',
  
-    'serverError': 'Нам очень жаль, но на сервере во время расчёта произошла ошибка. Пожалуйста попробуйте позже.',
+    'serverError': 'К сожалению, во время расчёта на сервере произошла ошибка. Пожалуйста попробуйте позже.',
  
     'contact': 'Информация&nbsp;&amp;&nbsp;Контакты',
  
@@ -13,7 +13,7 @@ var lang_ru = {
     'saveBtn': 'Сохранить',
  
     'untitled': 'Безымянный',
-	'infoTextVersions': 'Впервые на OpenRouteService? Включите расширенные опции в меню Настройки.',
+    'infoTextVersions': 'Впервые на OpenRouteService? Включите расширенные опции в меню Настройки.',
  
     'routePlanner': 'Маршрут',
     'search': 'Поиск',
@@ -22,7 +22,7 @@ var lang_ru = {
  
     //Routing
     'planRoute': 'План маршрута',
-    'calculatingRoute': 'Расчёт Маршрута...',
+    'calculatingRoute': 'Расчёт маршрута...',
     'noRouteAvailable': 'Сожалеем, но маршрут между выбранными точками не найден. Попробуйте выбрать точки ближе к дороге.',
     'routeFromTo': 'Маршрут в ',
     'resetRoute': 'Сбросить весь маршрут',
@@ -35,18 +35,18 @@ var lang_ru = {
     'permalinkButton': 'Постоянная ссылка',
  
     //Geolocation
-    'geolocationNotification': 'Планировщик маршрута попытается определить ваше положение. Если вы не хотите принимать запрос, вы будете перенаправлены сейчас.',
+    'geolocationNotification': 'Планировщик маршрута попытается определить Ваше положение. Если Вы не хотите принимать запрос, Вы будете перенаправлены сейчас.',
     'currentLocation': 'Моё текущее положение',
     'geolocation': 'Моё положение',
     'showCurrentLocation': 'Показать моё текущее положение',
     'geolocationNotSupported': 'Ваш браузер не поддерживает данную функцию.',
-    'geolocationRuntimeError': 'Во время определения положения произошла ошибка, мы сожалеем!',
+    'geolocationRuntimeError': 'К сожалению, во время определения положения произошла ошибка!',
  
     //search in general
     'zoomToSearchResults': 'Приблизиться к результату поиска',
     'selectResult': 'Выбранный результат:',
-    'searchAgain': 'искать Снова',
-    'searchError': 'Во время поиска произошла ошибка, мы сожалеем!',
+    'searchAgain': 'искать снова',
+    'searchError': 'К сожалению, во время поиска произошла ошибка!',
  
     //Address search
     'searchForPoints': 'Поиск по адресу',
@@ -54,7 +54,7 @@ var lang_ru = {
  
     //POI search
     'distaneNotSupported': 'максимальная дистанция: 5000 метров',
-    'noRouteFound': 'Нет маршрута к найденным рядом POI.',
+    'noRouteFound': 'Рядом с найденным POI нет маршрута.',
     'searchForPoi': 'Поиск POI',
     'poiNearRoute1': 'искать POI на расстоянии&nbsp;',
     'poiNearRoute2': '&nbsp; по маршруту',
@@ -63,32 +63,32 @@ var lang_ru = {
     'numPoiResults2': ' </b>(макс. 100):',
  
     // context menu
-    'useAsStartPoint': 'использовать как начальную точку',
-    'useAsViaPoint': 'вставить точку между',
-    'useAsEndPoint': 'использовать как место назначения',
+    'useAsStartPoint': 'Проложить маршрут отсюда',
+    'useAsViaPoint': 'Добавить пункт назначения',
+    'useAsEndPoint': 'Проложить маршрут сюда',
  
     //Waypoint options
-    'addWaypoint': 'Добавить путевую точку',
-    'moveUpWaypoint': 'Переместить путевую точку вверх',
+    'addWaypoint': 'Добавить пункт назначения',
+    'moveUpWaypoint': 'Переместить чку вверх',
     'moveDownWaypoint': 'Переместить путевую точку вниз',
     'removeWaypoint': 'Удалить путевую точку',
     'useAsWaypoint': 'использовать как путевую точку',
  
     //Route Preferences
-    'Shortest': 'короткий маршрут',
+    'Shortest': 'кратчайший маршрут',
     'Fastest': 'быстрый маршрут',
     'Pedestrian': 'пешеходный',
-    'Bicycle': 'короткий маршрут',
-    'BicycleSafety': 'безопасный маршрут',
-    'BicycleRoute': 'предпочитать выделенные дорожки',
+    'Bicycle': 'велосипедный',
+    'BicycleSafety': 'безопасный',
+    'BicycleRoute': 'предпочитать велодорожки',
     'BicycleMTB': 'горный велосипед',
     'BicycleRacer': 'скоростной велосипед',
-	'Wheelchair' : 'доступный маршрут',
+    'Wheelchair' : 'инвалидная коляска',
  
     'avoidMotorways': 'Избегать автодорог',
     'avoidTollways': 'Избегать платных дорог',
-	'avoidunpavedRoads':  'Избегайте грунтовые дороги',
-	'avoidFerry':  'Избегайте паромы',
+	'avoidunpavedRoads':  'Избегать грунтовые дороги',
+	'avoidFerry':  'Избегать паромы',
 	'TruckLength' : 'максимальная длина',
 	'TruckHeight' : 'максимальная высота',
 	'TruckWeight' : 'максимальный вес',
@@ -108,7 +108,7 @@ var lang_ru = {
     'all_surfaces': 'гибкий',
 
     // Inclines
-	'incline': 'макс наклона',
+	'incline': 'макс. наклона',
 	'threepercent' : 'вплоть до 3%',
 	'sixpercent' : 'вплоть до 6%',
 	'tenpercent' : 'вплоть до 10%',
